@@ -47,7 +47,7 @@
 
 body {
   background-image: url(./assets/bg/background.jpg);
-  font-family: "asap", sans-serif;
+  
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,11 +155,14 @@ p {
 
 
 #list-sidebar{
+  font-family: "Nohemi Regular", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
   display: flex;
   align-items: center;
   width: 195px;
-height: 38px;
-gap: 0.5rem;
+  height: 38px;
+  gap: 0.5rem;
 
 }
 

@@ -20,7 +20,7 @@ const Sidebar = () => {
             <div id="list-sidebar"><ControlpanelIcons/> <span>Panel de Control</span>  </div>
             <div id="list-sidebar"><ProjectsIcons/> <span>Proyectos</span></div>
             <div id="list-sidebar"><CreatorcontentIcons/> <span>Creador de Contenido</span></div>
-            <div id="list-sidebar"><CampainIcon/> <span>Camapañas</span></div>
+            <div id="list-sidebar"><CampainIcon/> <span>Campañas</span></div>
             <div id="list-sidebar"><AccountsIcon/> <span>Cuentas Conectadas</span></div>
             <div id="list-sidebar"><PaymentsIcons/> <span>Facturación y pagos</span></div>
         </div>

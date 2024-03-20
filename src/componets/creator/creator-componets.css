@@ -86,7 +86,14 @@
   margin-top: 13px;
 }
 
-.input-container-description textarea {
+
+.input-container-description {
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.input-description {
+  width: 671px ;
   border: none;
   outline: none;
   color: #302e2f;
@@ -95,14 +102,15 @@
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  width: 671px;
   height: 75px;
+  resize: none;
+  scrollbar-width: thin;
+  scrollbar-color: #6335ff transparent; 
+  border-radius: 20px; 
 }
 
-.input-container-description {
-  margin-left: 25px;
-  margin-top: 5px;
-}
+
+
 
 /* COMPONENT DESCRIPTION */
 

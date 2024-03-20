@@ -9,7 +9,11 @@ const Description = () => {
         </div>
 
         <div className="input-container-description">
-            <textarea className="input-description" type="text" placeholder="Descripcion"></textarea>
+        <textarea
+            className="input-description"
+            placeholder="Descripción"
+            rows="4" 
+        ></textarea>
         </div>
 
     </>
