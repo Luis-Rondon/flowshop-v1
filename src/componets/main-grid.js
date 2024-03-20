@@ -6,6 +6,7 @@ import Networks from "./creator/networks";
 import Description from "./creator/description";
 import MyEditor from './creator/MyEditor'
 import Cta from "./creator/cta";
+import Creatordate from "./creator/creator-date";
 
 const Maingrid = () => {
     return(
@@ -22,10 +23,15 @@ const Maingrid = () => {
             </div>
             <div id="card1" className="descripcion">
                 <Description/>
+                <Helpicon/>
             </div>
-            <div id="card1" className="date">Fecha programada</div>
+            <div id="card1" className="date">
+                <Creatordate/>
+            </div>
             <div id="card1" className="content-main"><MyEditor/></div>
-            <div id="card1" className="cta"> <Cta/> </div>
+            <div id="card-cta" className="cta"> 
+                <Cta/> 
+            </div>
         </>
     )
 }

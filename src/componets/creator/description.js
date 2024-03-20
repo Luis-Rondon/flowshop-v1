@@ -5,7 +5,7 @@ const Description = () => {
         <>
         
         <div className="description-container">
-            <span className="description-span">Descripcion de la publicacion</span>
+            <span className="description-span">Descripción de la publicación</span>
         </div>
 
         <div className="input-container-description">

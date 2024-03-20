@@ -6,11 +6,11 @@ const Title = () => {
     <>
         
         <div className="title-container">
-            <span className="title-span">Titulo de publicacion</span>
+            <span className="title-span">Título de tu publicación</span>
         </div>
 
         <div className="input-container">
-            <input className="input-title" type="text" placeholder="Titulo del Proyecto"></input>
+            <input className="input-title" type="text" placeholder="Título de tu Proyecto"></input>
         </div>
 
     </>

@@ -15,7 +15,7 @@ const Navbar = () => {
             </div>
 
         <p className="text-nav">
-            Apunta a las estrellas y llegaras a las montanas
+            Apunta a las estrellas, y llegarás a las montañas.
         </p>
 
         <div className="icons-navbar">

@@ -11,7 +11,7 @@ const Networks = () => {
     return(
     <>
         <div className="container-network">
-            <span className="network-tittle">Esta publicacion es para:</span>
+            <span className="network-tittle">Esta publicación es para:</span>
         </div>
         <div className="icons-container">
         <Instagramicon/>

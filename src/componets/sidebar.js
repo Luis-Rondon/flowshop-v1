@@ -15,19 +15,19 @@ const Sidebar = () => {
 
     return (
     <>
-        <div className="menuSide">
+        <div className="menuSide" className="list-text-color">
             <div id="list-sidebar"><DashboardIcons/><span>Dashboard</span> </div>
-            <div id="list-sidebar"><ControlpanelIcons/> <span>Panel de Control</span>  </div>
+            <div id="list-sidebar"><ControlpanelIcons/> <span>Panel de control</span>  </div>
             <div id="list-sidebar"><ProjectsIcons/> <span>Proyectos</span></div>
-            <div id="list-sidebar"><CreatorcontentIcons/> <span>Creador de Contenido</span></div>
+            <div id="list-sidebar"><CreatorcontentIcons/> <span>Creador de contenido</span></div>
             <div id="list-sidebar"><CampainIcon/> <span>Campañas</span></div>
-            <div id="list-sidebar"><AccountsIcon/> <span>Cuentas Conectadas</span></div>
+            <div id="list-sidebar"><AccountsIcon/> <span>Cuentas conectadas</span></div>
             <div id="list-sidebar"><PaymentsIcons/> <span>Facturación y pagos</span></div>
         </div>
         <div className="Side-config">
-            <div id="list-config"><TutorialsIcons/> <span>Tutoriales</span></div>
-            <div id="list-config" ><ConfigIcon/> <span>Configuracion</span></div>
-            <div id="list-config" className="logoutbutton"><LogoutIcons/> <span>Cerrar Sesion</span></div>
+            <div id="list-tutorial"><TutorialsIcons/> <span>Tutoriales</span></div>
+            <div id="list-config"><ConfigIcon/> <span>Configuración</span></div>
+            <div id="list-logout"><LogoutIcons/> <span>Cerrar Sesion</span></div>
         </div>
     </>
     )
