@@ -1,0 +1,128 @@
+.help-button {
+  position: absolute;
+  right: 4px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.title-span {
+  color: rgba(95, 92, 93, 0.5);
+  font-family: Montserrat;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.title-container {
+  margin-left: 25px;
+  margin-top: 13px;
+}
+
+.input-container {
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.input-container input {
+  width: 671px;
+  border: none;
+  outline: none;
+  color: var(--Black, #302e2f);
+  font-family: Nohemi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 19px;
+}
+
+/* COMPONENT NETWORKS */
+
+.network-tittle {
+  color: var(--Dark-ocean, #101040);
+  font-family: Nohemi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#networks-icons {
+  height: 16px;
+}
+
+.container-network {
+  margin-top: 12px;
+  margin-left: 18px;
+}
+
+.icons-container {
+  margin-left: 22px;
+  margin-top: 11px;
+  display: flex;
+  width: 153px;
+  height: 17px;
+  align-items: flex-start;
+  gap: 16px;
+  cursor: pointer;
+}
+
+/* COMPONENT NETWORKS */
+
+/* COMPONENT DESCRIPTION */
+
+.description-span {
+  color: rgba(95, 92, 93, 0.5);
+  font-family: Montserrat;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.description-container {
+  margin-left: 25px;
+  margin-top: 13px;
+}
+
+.input-container-description textarea {
+  border: none;
+  outline: none;
+  color: #302e2f;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  width: 671px;
+  height: 75px;
+}
+
+.input-container-description {
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+/* COMPONENT DESCRIPTION */
+
+.custom-editor .ql-container.ql-snow {
+  border: none; 
+}
+
+.ql-toolbar.ql-snow {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 8px;
+  background-color: #f2f2f2;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border: none !important;
+}
+
+ql-toolbar.ql-snow .ql-formats {
+  margin-right: 15px;
+  background-color: rgba(95, 92, 93, 0.25) !important;
+  border-radius: 8px;
+}
+

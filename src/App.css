@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #6335ff;
+  --ocean: #4045ff;
+  --sky: #2de1ff;
+  --candy: #46ffc2;
+  --cloud: #ffffff;
+  --gray: #f9f9f9;
+  --black: #302e2f;
+  --gradient: linear-gradient(90deg, #00c5dc 0%, #208cfd 50.5%, #8705fa 100%);
+  --dark-ocean: #101040;
+  --soft-gray: #302e2f;
+  --warning: #f4190b;
+  --purple: #8705fa;
+  --ocean-secundary: #208cfd;
+  --aqua: #00c5dc;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.main-section{ 
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0 1rem;
+  align-items: center;
+}
+
+
+body {
+  background-image: url(./assets/bg/background.jpg);
+  font-family: "asap", sans-serif;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: var(--primary);
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+}
+
+.text-nav {
+  color: var(--cloud);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.icons-navbar {
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #101040;
+}
+
+.profile-name {
+  color: var(--cloud);
+  font-size: 18px;
+  letter-spacing: 0, 5px;
+}
+
+/* HOVER PARA ICONOS DE LA NAVBAR */
+.Aspecthover,
+.AspectFill {
+  fill: #fff;
+  transition: fill 0.3s;
+}
+
+.Aspecthover:hover .AspectFill {
+  fill: #2de1ff;
+}
+
+.Aspecthover:active .AspectFill {
+  fill: #46ffc2;
+}
+
+.messagehover,
+.messagestroke {
+  stroke: #fff;
+  transition: stroke 0.3s;
+}
+
+.messagehover:hover .messagestroke {
+  stroke: #2de1ff;
+}
+.messagehover:active .messagestroke {
+  stroke: #46ffc2;
+}
+
+
+
+#icons-box{
+  width: 14px;
+  height: 14px;
+}
+
+.Side-config{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.menuSide{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+#list-sidebar{
+  display: flex;
+  align-items: center;
+  width: 195px;
+height: 38px;
+gap: 0.5rem;
+
+}
+
+#list-config{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+
+.logoutbutton p {
+  color: #f4190b;
+}
+
+/* SECTION GRID */
+
+.container-gridd{
+  height: 100%;
+  gap: 8px;
+  display: grid;
+  grid-template-columns:725px 393px ;
+  grid-template-rows: 74px 124px 519px 78px;
+  overflow: scroll;
+  border-radius: 8px;
+  scrollbar-width: none; 
+  grid-template-areas:"titulo redes"
+                      "descripcion date"
+                      "content-main content-main"
+                      "cta cta";
+}
+
+.Titulo{
+  grid-area:titulo;
+}
+
+.redes{
+  grid-area: redes;
+}
+
+.descripcion{
+  grid-area: descripcion;
+}
+
+.date{
+  grid-area: date;
+}
+
+.content-main{
+  grid-area: content-main;
+  overflow: hidden;
+}
+
+.cta{
+  grid-area: cta;
+}
+
+
+
+#card1{
+  background-color: var(--cloud);
+  border-radius: 0.5rem;
+  position: relative;
+}
