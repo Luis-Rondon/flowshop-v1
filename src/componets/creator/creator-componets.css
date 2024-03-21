@@ -152,8 +152,6 @@ ql-toolbar.ql-snow .ql-formats {
   
 }
 
-
-
 #cta-btn-text{
 color: var(--Primary, #6335FF);
 font-family: Nohemi;
@@ -169,7 +167,9 @@ line-height: normal;
   height: 36px;
   width: 200px;
 background: var(--Candy, #46FFC2);
-
+border-radius: 8px;
+border: none;
+cursor: pointer;
 }
 
 #card-cta{
