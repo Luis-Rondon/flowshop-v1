@@ -178,24 +178,17 @@ ql-toolbar.ql-snow .ql-formats {
   height: 100%;
 }
 
-
-
-#cta-btn-text{
-color: var(--Primary, #6335FF);
-font-family: Nohemi;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-
-
-}
-
-.cta-next{
-  height: 36px;
-  width: 200px;
-background: var(--Candy, #46FFC2);
-
+#cta-btn {
+  color: var(--primary);
+  font-family: Nohemi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: var(--candy);
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
 }
 
 
