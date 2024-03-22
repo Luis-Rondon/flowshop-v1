@@ -1,34 +1,77 @@
 import React from "react";
-import DashboardIcons from './icons-sidebar/dashboardIcons'
-import AccountsIcon from './icons-sidebar/accountsIcon'
-import CampainIcon from './icons-sidebar/campainIcon'
+import DashboardIcon from './icons-sidebar/dashboardIcon'
+import AccountIcon from './icons-sidebar/accountIcon'
+import CampaignIcon from './icons-sidebar/campaignIcon'
 import ConfigIcon from './icons-sidebar/configIcon'
-import ControlpanelIcons from './icons-sidebar/controlpanelIcons'
-import CreatorcontentIcons from './icons-sidebar/creatorcontentIcons'
-import LogoutIcons from './icons-sidebar/logoutIcons'
-import PaymentsIcons from './icons-sidebar/paymentsIcons'
-import ProjectsIcons from './icons-sidebar/projectsIcons'
-import TutorialsIcons from './icons-sidebar/tutorialsIcons'
+import ControlpanelIcon from './icons-sidebar/controlpanelIcon'
+import CreatorIcon from './icons-sidebar/creatorIcon'
+import LogoutIcon from './icons-sidebar/logoutIcon'
+import PaymentsIcon from './icons-sidebar/paymentsIcon'
+import ProjectsIcon from './icons-sidebar/projectsIcon'
+import TutorialIcon from './icons-sidebar/tutorialIcon'
 
 
 const Sidebar = () => {
 
     return (
     <>
-        <div className="menuSide" className="list-text-color">
-            <div id="list-sidebar"><DashboardIcons/><span>Dashboard</span> </div>
-            <div id="list-sidebar"><ControlpanelIcons/> <span>Panel de control</span>  </div>
-            <div id="list-sidebar"><ProjectsIcons/> <span>Proyectos</span></div>
-            <div id="list-sidebar"><CreatorcontentIcons/> <span>Creador de contenido</span></div>
-            <div id="list-sidebar"><CampainIcon/> <span>Campañas</span></div>
-            <div id="list-sidebar"><AccountsIcon/> <span>Cuentas conectadas</span></div>
-            <div id="list-sidebar"><PaymentsIcons/> <span>Facturación y pagos</span></div>
+
+        <div className="navigation">
+
+            <div id="nav-items">
+                <DashboardIcon/>
+                <span>Dashboard</span>
+            </div>
+
+            <div id="nav-items">
+                <ControlpanelIcon/>
+                <span>Panel de control</span>
+            </div>
+
+            <div id="nav-items">
+                <ProjectsIcon/>
+                <span>Proyectos</span>
+            </div>
+
+            <div id="nav-items">
+                <CreatorIcon/>
+                <span>Creador de contenido</span>
+            </div>
+
+            <div id="nav-items">
+                <CampaignIcon/>
+                <span>Campañas</span>
+            </div>
+
+            <div id="nav-items">
+                <AccountIcon/>
+                <span>Cuentas conectadas</span>
+            </div>
+
+            <div id="nav-items">
+                <PaymentsIcon/>
+                <span>Facturación y pagos</span>
+            </div>
+            
         </div>
-        <div className="Side-config">
-            <div id="list-tutorial"><TutorialsIcons/> <span>Tutoriales</span></div>
-            <div id="list-config"><ConfigIcon/> <span>Configuración</span></div>
-            <div id="list-logout"><LogoutIcons/> <span>Cerrar Sesion</span></div>
+
+        <div className="bottom-items">
+            <div id="tutorial">
+                <TutorialIcon/>
+                <span>Tutoriales</span>
+            </div>
+
+            <div id="config">
+                <ConfigIcon/>
+                <span>Configuración</span>
+            </div>
+
+            <div id="logout">
+                <LogoutIcon/>
+                <span>Cerrar Sesion</span>
+            </div>
         </div>
+
     </>
     )
 }

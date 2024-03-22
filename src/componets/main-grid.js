@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "./sidebar";
 import Title from "./creator/title";
 import Helpicon from "./icons-creator/help-icon"
 import Networks from "./creator/networks";
@@ -11,27 +10,34 @@ import Creatordate from "./creator/creator-date";
 const Maingrid = () => {
     return(
         <>
-            <div id="card1" className="Titulo">   
+
+            <div id="box-1" className="Titulo">   
                 <Helpicon/>
                 <Title/>
-                </div>
+            </div>
 
-            <div id="card1" className="redes">
+            <div id="box-2" className="redes">
                 <Networks/>
                 <Helpicon/>
-
             </div>
-            <div id="card1" className="descripcion">
+
+            <div id="box-3" className="descripcion">
                 <Description/>
                 <Helpicon/>
             </div>
-            <div id="card1" className="date">
+
+            <div id="box-4" className="date">
                 <Creatordate/>
             </div>
-            <div id="card1" className="content-main"><MyEditor/></div>
-            <div id="card-cta" className="cta"> 
+
+            <div id="box-5" className="content-main">
+                <MyEditor/>
+            </div>
+
+            <div id="box-6" className="cta"> 
                 <Cta/> 
             </div>
+
         </>
     )
 }

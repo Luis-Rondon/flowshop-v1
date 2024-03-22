@@ -1,3 +1,24 @@
+/* RESOURCES -------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #6335ff;
+  --ocean: #4045ff;
+  --sky: #2de1ff;
+  --candy: #46ffc2;
+  --cloud: #ffffff;
+  --gray: #f9f9f9;
+  --black: #302e2f;
+  --gradient: linear-gradient(90deg, #00c5dc 0%, #208cfd 50.5%, #8705fa 100%);
+  --dark-ocean: #101040;
+  --soft-gray: #302e2f;
+  --warning: #f4190b;
+  --purple: #8705fa;
+  --ocean-secundary: #208cfd;
+  --aqua: #00c5dc;
+}
+
+/* HELP BUTTON ----------------------------------------------*/
 .help-button {
   position: absolute;
   right: 4px;
@@ -5,8 +26,14 @@
   cursor: pointer;
 }
 
-.title-span {
-  color: rgba(95, 92, 93, 0.5);
+/* TITULO BOX 1 ----------------------------------------------*/
+.title-container {
+  margin-left: 25px;
+  margin-top: 13px;
+}
+
+.title-container span {
+  color: var(--cloud);
   font-family: Montserrat;
   font-size: 11px;
   font-style: normal;
@@ -14,21 +41,10 @@
   line-height: normal;
 }
 
-textarea{
-  padding: 0;
-}
-
-.title-container {
-  margin-left: 25px;
-  margin-top: 13px;
-}
-
 .input-container {
   margin-top: 5px;
   margin-left: 25px;
 }
-
-
 
 .input-container input {
   padding: 0;
@@ -36,13 +52,23 @@ textarea{
   width: 671px;
   border: none;
   outline: none;
-  color: var(--Black, #302e2f);
+  color: var(--cloud);
   font-family: Nohemi;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   height: 19px;
+  background-color: rgba(95, 92, 93, 0);
+}
+
+.input-container input::placeholder {
+  color: var(--placeholder-color);
+}
+
+
+textarea{
+  padding: 0;
 }
 
 /* COMPONENT NETWORKS */
@@ -142,35 +168,29 @@ ql-toolbar.ql-snow .ql-formats {
   border-radius: 8px;
 }
 
-/* CTA */
+/* CTA -------------------------------------------------------------------- */
 
-.cta-container{
+.cta-container {
   display: flex;
-  margin-top: 21px;
   justify-content: flex-end;
-  margin-right: 26px;
-  
+  align-items: center;
+  margin-right: 1rem;
+  height: 100%;
 }
 
-
-
-#cta-btn-text{
-color: var(--Primary, #6335FF);
-font-family: Nohemi;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-
-
+#cta-btn {
+  color: var(--primary);
+  font-family: Nohemi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: var(--candy);
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
 }
 
-.cta-next{
-  height: 36px;
-  width: 200px;
-background: var(--Candy, #46FFC2);
-
-}
 
 #card-cta{
   border-radius: 0.5rem;
