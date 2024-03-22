@@ -1,6 +1,6 @@
 import React from "react";
 import FlowshopLogo from "./logo";
-import '../App.css';
+import '../app.css';
 import Aspect from "../componets/icons-navbar/Aspect";
 import Lang from "../componets/icons-navbar/Lang";
 import Messages from "../componets/icons-navbar/Messages";
@@ -9,43 +9,46 @@ import Notify from "../componets/icons-navbar/Notify";
 
 const Navbar = () => {
     return(
-        <nav className="navbar">
-            <div className="logo">
-            <FlowshopLogo/>
+        <>
+            <nav className="header">
+            <div className="active-area">
+                <div className="logo">
+                    <FlowshopLogo/>
+                </div>
+
+                <span className="slogan">
+                    Apunta a las estrellas, y llegarás a las montañas.
+                </span>
+
+                <div className="header-icons">
+
+                    <div className="aspect">
+                        <Aspect/>
+                    </div>
+
+                    <div className="lang">
+                        <Lang/>
+                    </div>
+
+                    <div className="messages">
+                        <Messages/>
+                    </div>
+
+                    <div className="notify">
+                        <Notify/>
+                    </div>
+                    
+                </div>
+
+                <div className="profile">
+
+                    <span className="username">Sioswel Medina</span>
+                    <div className="profile-image"> </div>
+
+                </div>
             </div>
-
-        <p className="text-nav">
-            Apunta a las estrellas, y llegarás a las montañas.
-        </p>
-
-        <div className="icons-navbar">
-            <div className="Aspecthover">
-            <Aspect/>
-            </div>
-
-            <div className="Aspecthover">
-            <Lang/>
-            </div>
-
-            <div className="messagehover">
-            <Messages/>
-            </div>
-
-            <div className="Aspecthover">
-            <Notify/>
-            </div>
-            
-        </div>
-
-        <div className="profile">
-            <div className="profile-image">
-                
-            </div>
-            
-            <h2 className="profile-name">Sioswel Vegas</h2>
-
-        </div>
-        </nav>
+            </nav>
+        </>
     )
 };
 

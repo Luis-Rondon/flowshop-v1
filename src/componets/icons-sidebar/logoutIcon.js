@@ -1,6 +1,6 @@
 import * as React from "react"
 const logoutIcons = (props) => (
-  <div id="icons-box">
+  <div id="bottom-icons-box">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={14}
