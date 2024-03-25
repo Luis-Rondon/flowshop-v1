@@ -26,7 +26,7 @@ const tutorialsIcons = (props) => (
         strokeWidth={2}
         d="M7 13A6 6 0 1 0 7 1a6 6 0 0 0 0 12Z"
       />
-      <path
+      <path className=""
         fill="#000"
         stroke="#000"
         strokeLinejoin="round"
@@ -35,7 +35,7 @@ const tutorialsIcons = (props) => (
       />
     </mask>
     <g mask="url(#a)">
-      <path fill="#101040" d="M-.2-.2h14.4v14.4H-.2V-.2Z" />
+      <path className="icons-bottom" fill="#101040" d="M-.2-.2h14.4v14.4H-.2V-.2Z" />
     </g>
   </svg>
   </div>
