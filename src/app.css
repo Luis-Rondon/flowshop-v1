@@ -176,6 +176,7 @@ body::-webkit-scrollbar {
   width: 195px;
   height: 38px;
   gap: 0.5rem;
+  padding-left: 8px ;
 }
 
 #icons-box{
@@ -282,3 +283,75 @@ body::-webkit-scrollbar {
   border-radius: 8px;
   position: relative;
 }
+
+/*HOVER DE LA SIDEBAR ------------------------------------------------*/
+
+#nav-items:hover{
+  background-color: rgba(195, 195, 195, 0.20);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#nav-items:active{
+  border-radius: 6px;
+  background: var(--primary);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: var(--cloud);
+}
+
+#nav-items:active .icons-side{
+  fill: var(--candy);
+}
+
+.bottom-items:hover{
+  cursor: pointer;
+}
+
+
+#tutorial:hover{
+  color: var(--ocean);
+}
+
+#tutorial:hover .icons-bottom{
+  fill: var(--ocean);
+}
+
+#tutorial:active{
+  color: #191ECA;
+}
+
+#tutorial:active .icons-bottom{
+  fill: #191ECA;
+}
+
+
+#config:hover{
+  color: var(--ocean);
+}
+
+#config:hover .icons-bottom{
+  fill: var(--ocean);
+}
+
+#config:active{
+  color: #191ECA;
+}
+
+#config:active .icons-bottom{
+  fill: #191ECA;
+}
+
+#logout:hover .icon-logout{
+  fill: #FF675E;
+}
+
+#logout:active .icon-logout{
+  fill: #DE281D;
+}
+
+
+
+
+
+
+
