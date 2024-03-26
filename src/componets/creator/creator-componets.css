@@ -21,9 +21,28 @@
 /* HELP BUTTON ----------------------------------------------*/
 .help-button {
   position: absolute;
-  right: 4px;
-  top: 5px;
   cursor: pointer;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.help-tooltip {
+  position: absolute;
+  top: 100%; 
+  right: 0; 
+  color: var(--cloud);
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 8px;
+  border-radius: 4px;
+  display: none;
+  z-index: 9999; 
+}
+
+
+.help-button:hover .help-tooltip,
+.help-button.clicked .help-tooltip {
+  display: block;
 }
 
 /* TITULO BOX 1 ----------------------------------------------*/
