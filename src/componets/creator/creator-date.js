@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DateTimePicker from "./date-time/DatePicker";
 
 
 const Creatordate = () => {
@@ -8,14 +9,13 @@ const Creatordate = () => {
         <span>Publicación programada</span>
     </div>
 
-    <div className="fecha">
-        <label>fecha</label>
+    <div className="fecha-hora">
+        
+        <DateTimePicker label="Publicación programada" />
 
     </div>
+        
 
-    <div className="hora">
-
-    </div>
     </>
     )
 }
