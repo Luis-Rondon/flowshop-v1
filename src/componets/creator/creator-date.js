@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import DateTimePicker from "./date-time/DatePicker";
-
-
+import TimePicker from './date-time/datesfechas';
+import './creator-componets.css';
 const Creatordate = () => {
     return(
     <>
@@ -10,12 +9,10 @@ const Creatordate = () => {
     </div>
 
     <div className="fecha-hora">
-        
-        <DateTimePicker label="Publicación programada" />
+        <TimePicker/>
 
     </div>
         
-
     </>
     )
 }

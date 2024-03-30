@@ -23,7 +23,10 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  user-select: none;
 }
+
+
 
 /* Se aplica tanto al body del app como al del index.html*/
 body {
@@ -95,6 +98,7 @@ body::-webkit-scrollbar {
   width: 40px;
   height: 40px;
   background-image: url(../src/assets/profile/profile-pic.jpg);
+  cursor: pointer;
 }
 
 .username {
@@ -286,20 +290,21 @@ body::-webkit-scrollbar {
 
 /*HOVER DE LA SIDEBAR ------------------------------------------------*/
 
-#nav-items:hover{
+#nav-items:not(.active):hover {
   background-color: rgba(195, 195, 195, 0.20);
   border-radius: 6px;
   cursor: pointer;
 }
 
-#nav-items:active{
+#nav-items.active {
   border-radius: 6px;
   background: var(--primary);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: var(--cloud);
+  transition: 0.3s ease-in-out;
 }
 
-#nav-items:active .icons-side{
+#nav-items.active .icons-side{
   fill: var(--candy);
 }
 
@@ -348,6 +353,17 @@ body::-webkit-scrollbar {
 #logout:active .icon-logout{
   fill: #DE281D;
 }
+
+#logout:hover span{
+  color: #FF675E;
+}
+
+#logout:active span{
+  color:#DE281D;
+}
+
+
+/*Optimizar el codigo hover para mayor legibilidad */
 
 
 
