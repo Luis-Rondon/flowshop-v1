@@ -19,32 +19,25 @@
 }
 
 /* HELP BUTTON ----------------------------------------------*/
-.help-button {
+.tooltip-button-container {
   position: absolute;
-  cursor: pointer;
-  top: 10px;
-  right: 10px;
-  z-index: 9999;
+  top: -10px;
+  right: 8px;
+  
 }
 
-.help-tooltip {
-  position: absolute;
-  top: 100%; 
-  right: 0; 
-  color: var(--cloud);
-  background-color: rgba(0, 0, 0, 0.8); 
-  padding: 8px;
-  border-radius: 4px;
-  display: none;
-  z-index: 9999; 
+.custom-tooltip .tooltip-inner {
+  background-color: #FFF4E8; 
+  color: #000; 
+  font-size: 14px;
+  font-family: Montserrat;
+  box-shadow: 1px 2px 4px 0px #00000040;
+  text-align: left;
+  width: 239px;
+  border-radius: 8px 0px 8px 8px;
+
+  
 }
-
-
-.help-button:hover .help-tooltip,
-.help-button.clicked .help-tooltip {
-  display: block;
-}
-
 /* TITULO BOX 1 ----------------------------------------------*/
 .title-container {
   margin-left: 25px;
