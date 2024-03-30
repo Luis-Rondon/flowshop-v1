@@ -1,6 +1,6 @@
 import * as React from "react"
 const Calendaricon = (props) => (
-  <div id="networks-icons">
+  <div id="calendar-icon">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={10}
@@ -8,8 +8,8 @@ const Calendaricon = (props) => (
     fill="none"
     {...props}
   >
-    <path
-      stroke="#fff"
+    <path className="date-calendar"
+      stroke="#FFF"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={0.851}

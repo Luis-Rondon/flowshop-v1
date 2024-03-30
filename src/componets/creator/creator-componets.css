@@ -83,7 +83,9 @@
 
 .input-container input::placeholder {
   color: var(--placeholder-color);
+  opacity: 35%;
 }
+
 
 
 textarea{
@@ -103,6 +105,7 @@ textarea{
 
 #networks-icons {
   height: 16px;
+  cursor: pointer;
 }
 
 .container-network {
@@ -118,7 +121,7 @@ textarea{
   height: 17px;
   align-items: flex-start;
   gap: 16px;
-  cursor: pointer;
+  
 }
 
 /* COMPONENT NETWORKS */
@@ -216,3 +219,132 @@ ql-toolbar.ql-snow .ql-formats {
   background-color: #6335ff;
   
 }
+
+/* TIME & DATE REACT JS */
+
+/* TEXT Tiitle ===============================*/
+.title-creator span {
+color: var(--dark-ocean);
+font-family: Nohemi;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.title-creator{
+  margin-top: 28px;
+  margin-left: 18px;
+}
+/* TEXT Tiitle */
+
+
+/* Label Tittle ==============================*/
+.fecha-container label, .hora-container label {
+  color: rgba(95, 92, 93, 0.50);
+font-family: Montserrat;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/* Label Tittle */
+
+/* INPUTS STYLES ============================= */
+
+.time-picker{
+  display: flex;
+  gap: 15.45px;
+  margin-left: 18px;
+  position: relative;
+}
+
+
+
+#fecha-value{
+  color: var(--Soft-gray, #5F5C5D);
+text-align: center;
+leading-trim: both;
+text-edge: cap;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+outline: none;
+}
+
+#hora-value{
+  color: var(--Soft-gray, #5F5C5D);
+text-align: center;
+leading-trim: both;
+text-edge: cap;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+outline: none;
+}
+
+
+.fecha-container input {
+display: flex;
+width: 147.317px;
+height: 32.966px;
+padding: 5px 8px;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 12px;
+border-radius: 4px;
+border: none;
+background: var(--Gray, #F9F9F9);
+box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hora-container input{
+  display: flex;
+width: 75.204px;
+height: 32.966px;
+justify-content: center;
+align-items: center;
+gap: 2px;
+flex-shrink: 0;
+border: none;
+border-radius: 4px;
+background: var(--Gray, #F9F9F9);
+box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* INPUTS STYLES */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  
+}
+
+/* TEST DE ICON
+#calendar-icon{
+  width: 8px;
+  height: 8px;
+
+}
+
+.date-calendar{
+  stroke: #208cfd;
+}
+
+.group-calendar{
+  display: flex;
+  align-items: center;
+  background-color: #fd2720;
+}
+*/
+
+
+
+
+
+
