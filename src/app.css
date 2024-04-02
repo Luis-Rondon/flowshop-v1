@@ -367,6 +367,25 @@ body::-webkit-scrollbar {
 
 
 
+.proyectos-container{
+  display: flex;
+  width: 1126px;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--cloud);
+}
+
+.proyectos-container span{
+  color: rgba(99, 53, 255, 0.50);
+font-family: Nohemi;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
 
 
 

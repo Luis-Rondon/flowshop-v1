@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,} from "react";
 import DashboardIcon from './icons-sidebar/dashboardIcon'
 import AccountIcon from './icons-sidebar/accountIcon'
 import CampaignIcon from './icons-sidebar/campaignIcon'
@@ -9,14 +9,18 @@ import LogoutIcon from './icons-sidebar/logoutIcon'
 import PaymentsIcon from './icons-sidebar/paymentsIcon'
 import ProjectsIcon from './icons-sidebar/projectsIcon'
 import TutorialIcon from './icons-sidebar/tutorialIcon'
+import { useNavigate } from "react-router-dom"; // Importar el hook useNavigate
 
 
 const Sidebar = () => {
     const [elementoActivo, setElementoActivo] = useState(null);
+    const navigate = useNavigate();
 
-    const manejarClick = (id) => {
-    setElementoActivo(id);
+    const manejarClick = (ruta) => {
+        setElementoActivo(ruta); // Actualizar estado activo
+        navigate(`/${ruta}`); // Navegar a la ruta correspondiente
     };
+    
 
     return (
     <>

@@ -10,7 +10,7 @@ import Creatordate from "./creator/creator-date";
 const Maingrid = () => {
     return(
         <>
-
+        <section className="container-module">
             <div id="box-1" className="Titulo">   
                 <Helpicon/>
                 <Title/>
@@ -28,6 +28,7 @@ const Maingrid = () => {
 
             <div id="box-4" className="date">
                 <Creatordate/>
+                <Helpicon/>
             </div>
 
             <div id="box-5" className="content-main">
@@ -37,7 +38,7 @@ const Maingrid = () => {
             <div id="box-6" className="cta"> 
                 <Cta/> 
             </div>
-
+        </section>
         </>
     )
 }
