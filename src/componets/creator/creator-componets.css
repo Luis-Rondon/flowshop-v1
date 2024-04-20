@@ -29,16 +29,15 @@
 
 .help-tooltip {
   position: absolute;
-  top: 100%; 
-  right: 0; 
+  top: 100%;
+  right: 0;
   color: var(--cloud);
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 8px;
   border-radius: 4px;
   display: none;
-  z-index: 9999; 
+  z-index: 9999;
 }
-
 
 .help-button:hover .help-tooltip,
 .help-button.clicked .help-tooltip {
@@ -86,9 +85,7 @@
   opacity: 35%;
 }
 
-
-
-textarea{
+textarea {
   padding: 0;
 }
 
@@ -121,7 +118,6 @@ textarea{
   height: 17px;
   align-items: flex-start;
   gap: 16px;
-  
 }
 
 /* COMPONENT NETWORKS */
@@ -142,14 +138,13 @@ textarea{
   margin-top: 13px;
 }
 
-
 .input-container-description {
   margin-left: 25px;
   margin-top: 5px;
 }
 
 .input-description {
-  width: 671px ;
+  width: 671px;
   border: none;
   outline: none;
   color: #302e2f;
@@ -161,22 +156,18 @@ textarea{
   height: 75px;
   resize: none;
   scrollbar-width: thin;
-  scrollbar-color: #6335ff transparent; 
-  
+  scrollbar-color: #6335ff transparent;
 }
-
-
-
 
 /* My Editor  */
 
 .custom-editor .ql-container.ql-snow {
-  border: none; 
+  border: none;
 }
 
 .ql-toolbar.ql-snow {
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding: 8px;
   background-color: #f2f2f2;
   border-top-left-radius: 7px;
@@ -213,116 +204,108 @@ ql-toolbar.ql-snow .ql-formats {
   padding: 8px 16px;
 }
 
-
-#card-cta{
+#card-cta {
   border-radius: 0.5rem;
   background-color: #6335ff;
-  
 }
 
 /* TIME & DATE REACT JS */
 
 /* TEXT Tiitle ===============================*/
 .title-creator span {
-color: var(--dark-ocean);
-font-family: Nohemi;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: var(--dark-ocean);
+  font-family: Nohemi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.title-creator{
+.title-creator {
   margin-top: 28px;
   margin-left: 18px;
 }
 /* TEXT Tiitle */
 
-
 /* Label Tittle ==============================*/
-.fecha-container label, .hora-container label {
-  color: rgba(95, 92, 93, 0.50);
-font-family: Montserrat;
-font-size: 11px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+.fecha-container label,
+.hora-container label {
+  color: rgba(95, 92, 93, 0.5);
+  font-family: Montserrat;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 /* Label Tittle */
 
 /* INPUTS STYLES ============================= */
 
-.time-picker{
+.time-picker {
   display: flex;
   gap: 15.45px;
   margin-left: 18px;
   position: relative;
 }
 
-
-
-#fecha-value{
-  color: var(--Soft-gray, #5F5C5D);
-text-align: center;
-leading-trim: both;
-text-edge: cap;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-outline: none;
+#fecha-value {
+  color: var(--Soft-gray, #5f5c5d);
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
 }
 
-#hora-value{
-  color: var(--Soft-gray, #5F5C5D);
-text-align: center;
-leading-trim: both;
-text-edge: cap;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-outline: none;
+#hora-value {
+  color: var(--Soft-gray, #5f5c5d);
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
 }
-
 
 .fecha-container input {
-display: flex;
-width: 147.317px;
-height: 32.966px;
-padding: 5px 8px;
-justify-content: center;
-align-items: center;
-text-align: center;
-gap: 12px;
-border-radius: 4px;
-border: none;
-background: var(--Gray, #F9F9F9);
-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
-}
-
-.hora-container input{
   display: flex;
-width: 75.204px;
-height: 32.966px;
-justify-content: center;
-align-items: center;
-gap: 2px;
-flex-shrink: 0;
-border: none;
-border-radius: 4px;
-background: var(--Gray, #F9F9F9);
-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  width: 147.317px;
+  height: 32.966px;
+  padding: 5px 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  border-radius: 4px;
+  border: none;
+  background: var(--Gray, #f9f9f9);
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
-
+.hora-container input {
+  display: flex;
+  width: 75.204px;
+  height: 32.966px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 4px;
+  background: var(--Gray, #f9f9f9);
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
 
 /* INPUTS STYLES */
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  
 }
 
 /* TEST DE ICON
@@ -343,8 +326,70 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 */
 
+/*Popover de Notificaciones ----------------------------- */
 
+/*Vistas Componentes, Pantalla creador ----------------------------- */
 
+.select-social-container {
+  background: var(--Primary, #6335ff);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
+.title-social {
+  color: var(--Cloud, #fff);
+  text-align: right;
+  font-family: Nohemi;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
+.social-cards-box {
+  display: flex;
+  gap: 12.8px;
+}
 
+.group-social {
+  display: flex;
+  width: 224px;
+  height: 154.4px;
+  border-radius: 12.8px;
+  background: #fff;
+  box-shadow: 1.6px 1.6px 0px 0px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+}
+
+.group-social span {
+  color: #979596;
+  font-family: Nohemi;
+  font-size: 25.6px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+btn-social {
+}
+
+.btn-social-create {
+  width: 500px;
+  height: 54px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #46ffc2;
+  color: var(--Dark-ocean, #101040);
+  font-family: Nohemi;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

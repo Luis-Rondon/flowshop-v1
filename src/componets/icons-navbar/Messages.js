@@ -8,7 +8,7 @@ const Messages = (props) => (
     {...props}
   >
     <path className="messagestroke"
-      stroke="#fff"
+      stroke="#5F5C5D"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

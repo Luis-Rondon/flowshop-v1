@@ -1,32 +1,50 @@
 import './app.css';
-import Navbar from './componets/Navbar';
 import Sidebar from './componets/sidebar'
 import Maingrid from './componets/main-grid';
-import Proyectos from './componets/creator/Proyectos';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Proyectos from './componets/creator/Mantenimiento';
+import Aspect from './componets/icons-navbar/Aspect';
+import Lang from './componets/icons-navbar/Lang';
+import Messages from './componets/icons-navbar/Messages';
+import Notify from './componets/icons-navbar/Notify';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import SelectSocial from './componets/creator/base-creator/Selectsocial';
+import GuideCreator from './componets/creator/base-creator/GuideCreator';
 
 
 function App() {
   return (
     <Router>
-      <section className='top'>
-        <Navbar />
-      </section>
-
-      <section className='main-section'>
+      <section className='container-creator'>
         <div className='sidebar'>
           <Sidebar />
         </div>
 
+        <section className='main-section'>
+
+        <div className='top-bar'>
+            <div className='options'>
+              <Aspect/>
+              <Lang/>
+              <Messages/>
+              <Notify/>
+            </div>
+
+            <div className="profile">
+              <span className="username">Sioswel Medina</span>
+              <div className="profile-image"></div>
+            </div>
+        </div>
         <Routes>
         <Route path="/dashboard" element={<Proyectos />} />
         <Route path="/panelc" element={<Proyectos />} />
         <Route path="/projects" element={<Proyectos />} />
-        <Route path="/creator-content" element={<Maingrid />} />  {/* Página principal */}
+        <Route path="/creator-content" element={<SelectSocial/>} />
+        <Route path="/creator-content/GuideCreator" element={<GuideCreator/>} />
         <Route path="/campaign" element={<Proyectos />} />
         <Route path="/networks" element={<Proyectos />} />
         <Route path="/payments" element={<Proyectos />} />
-        </Routes>
+        <Route path="/" element={<Navigate to="/dashboard" />} />        </Routes>
+        </section>
       </section>
     </Router>
   );

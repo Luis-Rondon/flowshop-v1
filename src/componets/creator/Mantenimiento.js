@@ -1,13 +1,16 @@
 import React from 'react'
 import ConstructionIcon from './icons-others/construction'
 
-const Proyectos = () => {
+const Mantenimiento = () => {
 return (
-    <div className='proyectos-container'>
+    <div className='mantenimiento-container'>
+    <div className='mantenimiento'>
         <ConstructionIcon/>
         <span>Esta página esta en construcción</span>
+    </div>
     </div>
 )
 }
 
-export default Proyectos
+
+export default Mantenimiento
