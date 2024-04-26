@@ -1,6 +1,5 @@
 import './app.css';
 import Sidebar from './componets/sidebar'
-import Maingrid from './componets/main-grid';
 import Proyectos from './componets/creator/Mantenimiento';
 import Aspect from './componets/icons-navbar/Aspect';
 import Lang from './componets/icons-navbar/Lang';
@@ -9,8 +8,6 @@ import Notify from './componets/icons-navbar/Notify';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import SelectSocial from './componets/creator/base-creator/Selectsocial';
 import GuideCreator from './componets/creator/base-creator/GuideCreator';
-
-
 function App() {
   return (
     <Router>
@@ -19,8 +16,7 @@ function App() {
           <Sidebar />
         </div>
 
-        <section className='main-section'>
-
+      <div className='contenedor-contenido'>
         <div className='top-bar'>
             <div className='options'>
               <Aspect/>
@@ -30,10 +26,12 @@ function App() {
             </div>
 
             <div className="profile">
-              <span className="username">Sioswel Medina</span>
               <div className="profile-image"></div>
+              <span className="username">Sioswel Medina</span>
             </div>
         </div>
+        
+        <section className='main-section'>
         <Routes>
         <Route path="/dashboard" element={<Proyectos />} />
         <Route path="/panelc" element={<Proyectos />} />
@@ -45,6 +43,8 @@ function App() {
         <Route path="/payments" element={<Proyectos />} />
         <Route path="/" element={<Navigate to="/dashboard" />} />        </Routes>
         </section>
+        
+      </div>
       </section>
     </Router>
   );

@@ -365,6 +365,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-shadow: 1.6px 1.6px 0px 0px rgba(0, 0, 0, 0.25);
   justify-content: center;
   align-items: center;
+  gap:20px;
 }
 
 .group-social span {
@@ -372,9 +373,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: Nohemi;
   font-size: 25.6px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600; 
   line-height: normal;
 }
+
+.icon-social {
+  display: flex; /* Heredado del padre */
+  align-items: center;
+  vertical-align: middle; /* Nueva propiedad */
+}
+
 
 btn-social {
 }
@@ -393,3 +401,45 @@ btn-social {
   font-weight: 500;
   line-height: normal;
 }
+
+/* Guide - Creator EDITOR QUILL*/
+.container-guide{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title-guide{
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #208cfd;
+  height: 80px;
+}
+
+.title-input input{
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background: none;
+  height: 30px;
+  width: 100%;
+}
+
+.title-input{
+  width: 1415px;
+}
+
+input::placeholder{
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Nohemi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  width: 100%;
+}
+
+
+
+

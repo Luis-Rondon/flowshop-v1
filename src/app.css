@@ -128,26 +128,36 @@ body::-webkit-scrollbar {
 /* SECCION CONTENEDORA DEL BODY (SIDEBAR Y MODULOS)  ---------------------------------- */
 .main-section {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-  flex-direction: column;
   margin-left: 16px;
   overflow: hidden;
   border-radius: 16px;
+  flex: 1;
   
-  
+}
+
+.contenedor-contenido { /* Nuevo envoltorio para barra-superior y seccion-principal */
+  display: flex; /* Diseño del área de contenido principal */
+  flex-direction: column; /* Barra superior arriba, seccion-principal abajo */
+  width: 100%; /* Rellena el espacio restante después de la barra lateral */
 }
 
 .top-bar{
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-bottom: 28px;
+  justify-content: flex-end; /* Contenido alineado a la derecha */
+  width: 100%; /* Abarca todo el ancho */
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.options{
+display: flex;
+gap: 38.4px;
+margin-right: 64px;
 }
 
 .container-creator{
   display: flex;
+  flex-direction: row;
 }
 
 /*sidebar*/
@@ -239,7 +249,6 @@ line-height: 37px; /* 132.143% */
 }
 
 .card-list-panel{
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -332,47 +341,6 @@ line-height: normal;
 
 /* MODULOS DE USO --------------------------------------------------------------- */
 
-.container-module {
-  height: 100%;
-  gap: 8px;
-  display: grid;
-  grid-template-columns: 725px 393px;
-  grid-template-rows: 74px 124px 1fr 78px;
-  overflow: scroll;
-  border-radius: 8px;
-  scrollbar-width: none;
-  grid-template-areas:
-    "titulo redes"
-    "descripcion date"
-    "content-main content-main"
-    "cta cta";
-}
-
-/* GRID AREAS -----------------------------------------*/
-.Titulo {
-  grid-area: titulo;
-}
-
-.redes {
-  grid-area: redes;
-}
-
-.descripcion {
-  grid-area: descripcion;
-}
-
-.date {
-  grid-area: date;
-}
-
-.content-main {
-  grid-area: content-main;
-  overflow: hidden;
-}
-
-.cta {
-  grid-area: cta;
-}
 
 /*CARDS CREADOR ------------------------------------------------*/
 
@@ -507,3 +475,4 @@ line-height: normal;
 }
 
 /*Section de Mantenimiento ----------------------------- */
+
