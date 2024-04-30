@@ -413,7 +413,7 @@ btn-social {
   border-radius: 16px;
   display: flex;
   align-items: center;
-  background-color: #208cfd;
+  background-color: #6335FF;
   height: 80px;
 }
 
@@ -423,6 +423,13 @@ btn-social {
   text-decoration: none;
   background: none;
   height: 30px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Nohemi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
   width: 100%;
 }
 
@@ -439,6 +446,8 @@ input::placeholder{
   line-height: 30px; /* 125% */
   width: 100%;
 }
+
+
 
 
 
